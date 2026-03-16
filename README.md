@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="Fig7_prior_funnel.png" width="900">
-</p>
-
 # 🧬 _2026_jonsson_veps
 
 This repository contains Python code and analysis scripts used to reproduce the results of the scientific paper:
