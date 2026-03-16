@@ -1,6 +1,10 @@
+<br>
+
 <p align="center">
-  <img src="Fig7_prior_funnel.png" width="900">
+  <img src="Fig7_prior_funnel.png" width="95%">
 </p>
+
+<br>
 
 # 🧬 _2026_jonsson_veps
 
