@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-  <img src="Fig7_prior_funnel.png" width="100%">
+  <img src="readme_header.png" width="100%">
 </p>
 
 <br>
