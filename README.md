@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-  <img src="Fig7_prior_funnel.png" width="95%">
+  <img src="Fig7_prior_funnel.png" width="100%">
 </p>
 
 <br>
