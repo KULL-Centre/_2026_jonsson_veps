@@ -1,116 +1,67 @@
 # 🧬 _2026_jonsson_veps
 
-Code and data access for the manuscript:
+This repository contains Python code and analysis scripts used to reproduce the results of the scientific paper:
 
-**“Disagreement among variant effect predictors guides experimental prioritization of target proteins.”**
+**Disagreement among variant effect predictors guides experimental prioritization of target proteins**
 
----
-
-## 👨‍🔬 Authors
-
-- **Nicolas F. Jonsson**¹  
-- **Joseph A. Marsh**²*  
-- **Kresten Lindorff-Larsen**¹*  
+N. F. Jonsson¹, J. A. Marsh²*, K. Lindorff-Larsen¹*
 
 ¹ Linderstrøm-Lang Centre for Protein Science, Department of Biology, University of Copenhagen, Copenhagen, Denmark  
 ² MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, Edinburgh, United Kingdom  
 
-📧 **Correspondence**
+*Corresponding authors*  
 
-- joseph.marsh@ed.ac.uk  
-- lindorff@bio.ku.dk  
-
-\* Corresponding authors
-
----
-
-# 📖 Overview
-
-Interpreting the functional consequences of genetic variation, particularly rare missense variants, remains a central challenge in human genetics. Computational **variant effect predictors (VEPs)** and experimental **multiplexed assays of variant effects (MAVEs)** provide complementary approaches.
-
-VEPs offer scalable predictions across the proteome, while MAVEs provide detailed empirical measurements but remain resource intensive and cannot yet be broadly applied.
-
-In this study we analysed predictions from **10 variant effect predictors across more than 13,000 human proteins** and quantified inter-predictor concordance.
-
-We observed substantial variability across proteins in the degree of agreement between predictors and investigated structural, functional, and gene-level features associated with this variation.
-
-Importantly, **inter-VEP concordance showed no relationship with agreement to experimental MAVE data**. If predictor agreement reflected how intrinsically predictable a protein is, these quantities would be expected to correlate. Their decoupling instead suggests that MAVEs provide orthogonal information relative to VEP predictions.
-
-We therefore propose **using inter-VEP disagreement as a strategy to prioritize proteins for experimental characterization**. Focusing on proteins with low predictor concordance may maximize the informational value of new MAVEs and improve variant interpretation in both research and clinical contexts.
+Correspondence:  
+joseph.marsh@ed.ac.uk  
+lindorff@bio.ku.dk  
 
 ---
 
-# 📂 Repository structure
+## 🔍 Overview
 
-```
-.
-├── data/                # Small metadata files used in the analysis
-├── figures/             # Output figures generated for the manuscript
-├── notebooks/           # Jupyter notebooks for exploratory analysis
-├── scripts/             # Analysis and plotting scripts
-└── README.md
-```
+Interpreting the functional consequences of genetic variation, particularly rare missense variants, remains a major challenge in human genetics. Computational variant effect predictors (VEPs) provide scalable predictions across the proteome, while multiplexed assays of variant effects (MAVEs) offer detailed experimental measurements but remain resource intensive.
 
-This repository mainly contains **analysis and plotting code used to generate the figures in the manuscript**.
+In this work we analyse predictions from multiple VEPs across more than 13,000 human proteins and quantify the degree of agreement between predictors. We show that inter-predictor concordance varies widely across proteins and does not correlate with agreement to experimental MAVE data. These results suggest that disagreement among predictors may highlight proteins where experimental measurements will be particularly informative.
+
+This repository contains the analysis scripts used to generate the results and figures presented in the manuscript.
 
 ---
 
-# 💾 Data availability
+## 💾 Data
 
-Due to their size, the full datasets used in this study are hosted externally.
+Due to their size, the datasets used in this study are hosted externally on ERDA.
 
-📦 **ERDA data repository**  
+The ERDA archive contains the processed datasets used in the analysis as well as intermediate files required to reproduce the figures presented in the manuscript.
+
 (ERDA link to be added)
 
-The ERDA archive contains:
+---
 
-- Variant effect predictor scores  
-- Protein-level summary statistics  
-- Processed datasets used in the analysis  
-- Intermediate files used to generate figures  
+## 📜 License
+
+The source code in this repository is licensed under the permissive MIT License.
 
 ---
 
-# ▶️ Reproducing the figures
+## 🐞 Bugs
 
-1. Clone this repository
-
-```bash
-git clone https://github.com/<username>/_2026_jonsson_veps.git
-cd _2026_jonsson_veps
-```
-
-2. Download the dataset from ERDA
-
-3. Extract the files and place them in the appropriate directory (e.g. `data/`)
-
-4. Run the plotting scripts
-
-Example:
-
-```bash
-python scripts/plot_figure_1.py
-```
+For any bugs please report the issue on the project GitHub page or contact one of the authors listed in the manuscript.
 
 ---
 
-# 📑 Citation
+## 📄 Citing this work
 
-If you use this code or data, please cite:
+If you use this code or data please cite:
+
+Jonsson, N. F., Marsh, J. A., & Lindorff-Larsen, K.  
+*Disagreement among variant effect predictors guides experimental prioritization of target proteins.*
+
+(preprint / journal reference to be added)
 
 ```
-Jonsson NF, Marsh JA, Lindorff-Larsen K.
-Disagreement among variant effect predictors guides experimental prioritization of target proteins.
+@ARTICLE{Jonsson2026,
+  title  = "Disagreement among variant effect predictors guides experimental prioritization of target proteins",
+  author = "Jonsson, Nicolas F. and Marsh, Joseph A. and Lindorff-Larsen, Kresten",
+  year   = "2026"
+}
 ```
-
-(Journal reference will be added upon publication.)
-
----
-
-# 📜 License
-
-This project is released under the **MIT License**.
-
----
-
-⭐ If this repository is useful for your research, please consider starring the project.
